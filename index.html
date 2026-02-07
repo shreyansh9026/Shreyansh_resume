@@ -15,22 +15,11 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Shreyansh.dev</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-            <button class="btn-download" onclick="window.print()">
-                <i class="fas fa-download"></i> Download Resume
-            </button>
-        </div>
-    </nav>
+    <!-- Navigation Removed -->
+
+    <button class="fab-download" onclick="window.print()" title="Download Resume">
+        <i class="fas fa-download"></i>
+    </button>
 
     <div class="resume-container">
         <!-- Header / Hero Section -->
@@ -39,25 +28,29 @@
                 <div class="header-text">
                     <h1>Shreyansh Tripathi</h1>
                     <p class="role">Web Developer</p>
-                    <p class="tagline">Building robust, user-centric web applications.</p>
                 </div>
-                <div class="contact-info">
-                    <a href="mailto:shreyanshtripathi115@gmail.com">
-                        <i class="fas fa-envelope"></i> shreyanshtripathi115@gmail.com
-                    </a>
-                    <a href="tel:+919026551394">
-                        <i class="fas fa-phone"></i> +91 9026551394
-                    </a>
-                    <span>
-                        <i class="fas fa-map-marker-alt"></i> Deoria, Uttar Pradesh
-                    </span>
-                    <div class="social-links">
+                <div class="contact-group">
+                    <div class="contact-line">
+                        <a href="mailto:shreyanshtripathi115@gmail.com">
+                            <i class="fas fa-envelope"></i> shreyanshtripathi115@gmail.com
+                        </a>
+                        <span class="separator">|</span>
+                        <a href="tel:+919026551394">
+                            <i class="fas fa-phone"></i> +91 9026551394
+                        </a>
+                        <span class="separator">|</span>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> Deoria, Uttar Pradesh
+                        </span>
+                    </div>
+                    <div class="social-line">
                         <a href="https://linkedin.com/in/shreyansh-tripathi-17feb" target="_blank"
                             aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
                         </a>
+                        <span class="separator">|</span>
                         <a href="https://github.com/shreyansh9026" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
+                            <i class="fab fa-github"></i> <span>GitHub</span>
                         </a>
                     </div>
                 </div>
@@ -82,7 +75,7 @@
                     <h3>Web Developer</h3>
                     <span class="meta">March 2025 - Present</span>
                 </div>
-                <div class="item-subheader">CMP Techsseract LLP</div>
+                <div class="item-subheader">CMP Techsseract LLP, LUCKNOW</div>
                 <ul>
                     <li>Developing and maintaining responsive web pages using React.js, HTML, CSS, and JavaScript.</li>
                     <li>Supporting backend integration with Python, MongoDB, and MySQL for dynamic content delivery.
@@ -92,8 +85,8 @@
 
             <div class="list-item">
                 <div class="item-header">
-                    <h3>Web Developer Intern</h3>
-                    <span class="meta">Dec 2024 – March 2025</span>
+                    <h3>Web Developer</h3>
+                    <span class="meta">Oct 2024 – March 2025</span>
                 </div>
                 <div class="item-subheader">Miso</div>
                 <ul>
@@ -105,7 +98,7 @@
             <div class="list-item">
                 <div class="item-header">
                     <h3>Web Developer Intern</h3>
-                    <span class="meta">Apr 2024 – Jun 2024</span>
+                    <span class="meta">Apr 2024 – Sept 2024</span>
                 </div>
                 <div class="item-subheader">Cognifyz Technology</div>
                 <ul>
@@ -117,7 +110,7 @@
             <div class="list-item">
                 <div class="item-header">
                     <h3>Web Developer Intern</h3>
-                    <span class="meta">Sep 2023 – Dec 2023</span>
+                    <span class="meta">Sept 2023 – March 2024</span>
                 </div>
                 <div class="item-subheader">Softpro India</div>
                 <ul>
@@ -132,7 +125,7 @@
 
             <div class="project-grid">
                 <div class="project-item">
-                    <h3>Agentic Honeypot <span class="badge">Hackathon Winner</span></h3>
+                    <h3>Agentic Honeypot <span class="badge">Hackathon Runnerup</span></h3>
                     <div class="project-meta">Python • FastAPI • OpenAI API</div>
                     <p>Designed an AI-powered honeypot system to detect, lure, and analyze malicious attackers using
                         autonomous agents.</p>
@@ -143,21 +136,21 @@
                 </div>
 
                 <div class="project-item">
-                    <h3>Grievance Redressal Portal</h3>
+                    <h3>Grievance Redressal Portal<span class="badge">Intership Project</span></h3>
                     <div class="project-meta">PHP • MySQL • Full Stack</div>
                     <p>Developed a platform for complaint submission and tracking with an admin dashboard for efficient
                         resolution management.</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>E-Health Care System</h3>
+                    <h3>E-Health Care System <span class="badge">Major college project</span></h3>
                     <div class="project-meta">PHP • MySQL</div>
                     <p>Built a patient management system for appointment scheduling, record keeping, and optimized
                         history retrieval.</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>Online Voting System</h3>
+                    <h3>Online Voting System <span class="badge">Minor college project</span></h3>
                     <div class="project-meta">PHP • Security</div>
                     <p>Created a secure voting interface ensuring data integrity with real-time result tallying and
                         reporting features.</p>
