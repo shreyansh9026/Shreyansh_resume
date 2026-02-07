@@ -4,47 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Shreyansh Tripathi</title>
+    <title>Shreyansh Tripathi | Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Open+Sans:wght@300;400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Shreyansh.dev</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+            <button class="btn-download" onclick="window.print()">
+                <i class="fas fa-download"></i> Download Resume
+            </button>
+        </div>
+    </nav>
+
     <div class="resume-container">
-        <header class="header">
-            <div class="header-text">
-                <h1>Shreyansh Tripathi</h1>
-                <p>Web Developer</p>
-            </div>
-            <div class="contact-info">
-                <span><i class="fas fa-phone"></i> +91 9026551394</span>
-                <span><i class="fas fa-envelope"></i> <a
-                        href="mailto:shreyanshtripathi115@gmail.com">shreyanshtripathi115@gmail.com</a></span>
-                <span><i class="fas fa-map-marker-alt"></i> Deoria, Uttar Pradesh</span>
-                <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/shreyansh-tripathi-17feb"
-                        target="_blank">linkedin.com/in/shreyansh-tripathi-17feb</a></span>
-                <span><i class="fab fa-github"></i> <a href="https://github.com/shreyansh9026"
-                        target="_blank">github.com/shreyansh9026</a></span>
+        <!-- Header / Hero Section -->
+        <header class="header" id="about">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Shreyansh Tripathi</h1>
+                    <p class="role">Web Developer</p>
+                    <p class="tagline">Building robust, user-centric web applications.</p>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:shreyanshtripathi115@gmail.com">
+                        <i class="fas fa-envelope"></i> shreyanshtripathi115@gmail.com
+                    </a>
+                    <a href="tel:+919026551394">
+                        <i class="fas fa-phone"></i> +91 9026551394
+                    </a>
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i> Deoria, Uttar Pradesh
+                    </span>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/shreyansh-tripathi-17feb" target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/shreyansh9026" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
 
-        <section class="section">
+        <section class="section summary-section">
             <h2 class="section-title">Professional Summary</h2>
             <p>
-                Motivated Web Developer with expertise in building responsive, user-friendly applications using
-                React.js, PHP, and MySQL. Proven track record of delivering clean code and robust backend solutions.
-                Passionate about continuous learning and implementing modern web technologies to solve real-world
-                problems.
+                Motivated Web Developer with expertise in building responsive, user-friendly applications using <span
+                    class="highlight">React.js, PHP, Python, and MySQL</span>. Proven track record of delivering clean
+                code and robust backend solutions. Passionate about continuous learning and implementing modern web
+                technologies to solve real-world problems.
             </p>
         </section>
 
-        <section class="section">
+        <section class="section" id="experience">
             <h2 class="section-title">Experience</h2>
 
             <div class="list-item">
@@ -97,68 +127,71 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="projects">
             <h2 class="section-title">Projects</h2>
 
-            <div class="project-item">
-                <h3>Agentic Honeypot <span>| HCL GUVI Hackathon 2026</span></h3>
-                <ul>
-                    <li>Designed an AI-powered system to detect and analyze malicious attackers using autonomous agents.
-                    </li>
-                    <li>Implemented risk scoring with <strong>Python, FastAPI, and OpenAI API</strong>.</li>
-                    <li>Created a structured logging system for actionable threat intelligence.</li>
-                </ul>
-            </div>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>Agentic Honeypot <span class="badge">Hackathon Winner</span></h3>
+                    <div class="project-meta">Python • FastAPI • OpenAI API</div>
+                    <p>Designed an AI-powered honeypot system to detect, lure, and analyze malicious attackers using
+                        autonomous agents.</p>
+                    <ul>
+                        <li>Implemented risk scoring and signal extraction.</li>
+                        <li>Maintained structured intelligence logging for evidence.</li>
+                    </ul>
+                </div>
 
-            <div class="project-item">
-                <h3>Grievance Redressal Portal</h3>
-                <ul>
-                    <li>Developed a full-stack platform for complaint tracking using <strong>PHP and MySQL</strong>.
-                    </li>
-                    <li>Built an admin dashboard for efficient status management and resolution.</li>
-                </ul>
-            </div>
+                <div class="project-item">
+                    <h3>Grievance Redressal Portal</h3>
+                    <div class="project-meta">PHP • MySQL • Full Stack</div>
+                    <p>Developed a platform for complaint submission and tracking with an admin dashboard for efficient
+                        resolution management.</p>
+                </div>
 
-            <div class="project-item">
-                <h3>E-Health Care System</h3>
-                <ul>
-                    <li>Built a patient management system for appointment scheduling and record keeping.</li>
-                    <li>Optimized database queries for fast retrieval of patient history.</li>
-                </ul>
-            </div>
+                <div class="project-item">
+                    <h3>E-Health Care System</h3>
+                    <div class="project-meta">PHP • MySQL</div>
+                    <p>Built a patient management system for appointment scheduling, record keeping, and optimized
+                        history retrieval.</p>
+                </div>
 
-            <div class="project-item">
-                <h3>Online Voting System</h3>
-                <ul>
-                    <li>Created a secure voting interface with PHP ensuring data integrity.</li>
-                    <li>Implemented real-time result tallying and admin reporting features.</li>
-                </ul>
+                <div class="project-item">
+                    <h3>Online Voting System</h3>
+                    <div class="project-meta">PHP • Security</div>
+                    <p>Created a secure voting interface ensuring data integrity with real-time result tallying and
+                        reporting features.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="skills">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <strong>Frontend</strong>
-                    <span>HTML5, CSS3, JavaScript, React.js, Bootstrap, Responsive Design</span>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>React.js</span> <span>JavaScript</span> <span>HTML5</span> <span>CSS3</span>
+                        <span>Bootstrap</span> <span>Responsive Design</span>
+                    </div>
                 </div>
                 <div class="skill-category">
-                    <strong>Backend & Database</strong>
-                    <span>PHP, Python, MySQL, MongoDB</span>
+                    <h3>Backend & Database</h3>
+                    <div class="skill-tags">
+                        <span>PHP</span> <span>Python</span> <span>MySQL</span> <span>MongoDB</span>
+                    </div>
                 </div>
                 <div class="skill-category">
-                    <strong>Tools & Platforms</strong>
-                    <span>Git, GitHub, WordPress, VS Code, Postman</span>
-                </div>
-                <div class="skill-category">
-                    <strong>Soft Skills</strong>
-                    <span>Problem Solving, Team Collaboration, Time Management</span>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span>Git</span> <span>GitHub</span> <span>WordPress</span> <span>VS Code</span>
+                        <span>Postman</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="education">
             <h2 class="section-title">Education</h2>
 
             <div class="list-item">
@@ -171,7 +204,7 @@
 
             <div class="list-item">
                 <div class="item-header">
-                    <h3>Diploma in Computer Science and Engineering</h3>
+                    <h3>Diploma in Computer Science</h3>
                     <span class="meta">2024</span>
                 </div>
                 <div class="item-subheader">Government Polytechnic Unnao | Score: 75%</div>
@@ -186,15 +219,44 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="achievements">
             <h2 class="section-title">Achievements</h2>
-            <ul style="margin-top: 10px;">
-                <li><strong>Gold Medalist:</strong> Shot Put (College Sports Fest)</li>
-                <li><strong>Certified:</strong> Web Development Training (Softpro India)</li>
-                <li><strong>Certified:</strong> Internship Completion (Cognifyz Technology)</li>
+            <ul class="achievement-list">
+                <li><i class="fas fa-trophy"></i> <strong>Gold Medalist:</strong> Shot Put (College Sports Fest)</li>
+                <li><i class="fas fa-certificate"></i> <strong>Certified:</strong> Web Development Training (Softpro
+                    India)</li>
+                <li><i class="fas fa-certificate"></i> <strong>Certified:</strong> Internship Completion (Cognifyz
+                    Technology)</li>
             </ul>
         </section>
     </div>
+
+    <footer class="site-footer">
+        <p>&copy;
+            <script>document.write(new Date().getFullYear())</script> Shreyansh Tripathi.
+        </p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/shreyansh-tripathi-17feb" target="_blank">LinkedIn</a>
+            <a href="https://github.com/shreyansh9026" target="_blank">GitHub</a>
+            <a href="mailto:shreyanshtripathi115@gmail.com">Email</a>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Scroll Reveal Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(sec => observer.observe(sec));
+        });
+    </script>
 </body>
 
 </html>
