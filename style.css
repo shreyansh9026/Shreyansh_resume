@@ -1,14 +1,18 @@
 :root {
-    --primary-color: #0f172a;
-    /* Dark slate */
-    --secondary-color: #334155;
-    /* Slate gray */
-    --accent-color: #2563eb;
-    /* Royal blue */
-    --text-color: #333;
-    --bg-color: #f8fafc;
-    --container-bg: #fff;
-    --border-color: #e2e8f0;
+    --primary-color: #f1f5f9;
+    /* Light slate for headings */
+    --secondary-color: #94a3b8;
+    /* Lighter gray for secondary text */
+    --accent-color: #60a5fa;
+    /* Brighter blue for accents */
+    --text-color: #cbd5e1;
+    /* Light gray for main text */
+    --bg-color: #0f172a;
+    /* Deep dark blue background */
+    --container-bg: #1e293b;
+    /* Slightly lighter dark container */
+    --border-color: #334155;
+    /* Dark border */
 }
 
 * {
@@ -31,7 +35,7 @@ body {
     margin: 40px auto;
     background: var(--container-bg);
     padding: 50px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
     border-top: 5px solid var(--accent-color);
 }
 
@@ -198,6 +202,7 @@ li {
 .project-item h3 {
     font-size: 1rem;
     font-weight: 700;
+    color: var(--primary-color);
 }
 
 .project-item h3 span {
@@ -215,9 +220,20 @@ li {
 
 /* Print Styling */
 @media print {
+    :root {
+        --primary-color: #000;
+        --secondary-color: #333;
+        --accent-color: #000;
+        --text-color: #000;
+        --bg-color: #fff;
+        --container-bg: #fff;
+        --border-color: #ddd;
+    }
+
     body {
         background: #fff;
         font-size: 10pt;
+        color: #000;
     }
 
     .resume-container {
@@ -226,6 +242,16 @@ li {
         padding: 0;
         border: none;
         max-width: 100%;
+        background: #fff;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #000;
     }
 
     .section {
@@ -238,7 +264,7 @@ li {
     }
 
     .contact-info i {
-        color: #333;
+        color: #000;
     }
 
     /* Hide URL expansions for a cleaner look unless crucial */
