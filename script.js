@@ -1,7 +1,7 @@
 const experienceData = [
     {
         title: "Web Developer",
-        period: "March 2025 - Present",
+        period: "March 2025 - Feb 2026",
         company: "CMP Techsseract LLP, LUCKNOW",
         tasks: [
             "Developing and maintaining responsive web pages using React.js, HTML, CSS, and JavaScript.",
