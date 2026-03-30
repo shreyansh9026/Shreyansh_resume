@@ -1,43 +1,54 @@
 const experienceData = [
     {
-        title: "Web Developer",
+        title: "PHP Developer",
         period: "March 2025 - Feb 2026",
         company: "CMP Techsseract LLP, LUCKNOW",
         tasks: [
-            "Developing and maintaining responsive web pages using React.js, HTML, CSS, and JavaScript.",
-            "Supporting backend integration with Python, MongoDB, and MySQL for dynamic content delivery."
+            "Developing and maintaining robust backend components and RESTful APIs using PHP and MySQL.",
+            "Integrating frontend frameworks with PHP backends to deliver dynamic content and scalable solutions."
         ]
     },
     {
-        title: "Web Developer",
+        title: "PHP Developer",
         period: "Oct 2024 – March 2025",
         company: "Miso",
         tasks: [
-            "Developed responsive web interfaces ensuring cross-browser compatibility.",
-            "Integrated PHP backend services with MySQL databases for seamless data management."
+            "Developed and optimized PHP backend logic, ensuring high performance and security for web applications.",
+            "Integrated PHP services with MySQL databases for seamless and efficient data management."
         ]
     },
     {
-        title: "Web Developer Intern",
+        title: "PHP Developer Intern",
         period: "Apr 2024 – Sept 2024",
         company: "Cognifyz Technology",
         tasks: [
-            "Designed UI components using Bootstrap and JavaScript to enhance user experience.",
-            "Collaborated with the development team to deploy and optimize WordPress websites."
+            "Assisted in backend development using PHP to implement business logic and connect to MySQL databases.",
+            "Collaborated with the development team to deploy and optimize dynamic, database-driven web platforms."
         ]
     },
     {
-        title: "Web Developer Intern",
+        title: "PHP Developer Intern",
         period: "Sept 2023 – March 2024",
         company: "Softpro India",
         tasks: [
-            "Built and tested functional modules for internal web applications.",
-            "Completed intensive professional training in full-stack web development."
+            "Built and tested functional modules utilizing PHP and SQL for internal management applications.",
+            "Completed intensive professional training with an emphasis on backend development using PHP and MySQL."
         ]
     }
 ];
 
 const projectsData = [
+    {
+        title: "Sasta Print",
+        badge: "Live Project",
+        techStack: "PHP • MySQL • MVC",
+        description: "Developed a secure and robust online printing platform enabling customers to seamlessly place, track, and review orders.",
+        highlights: [
+            "Built complex database models and optimized MySQL queries for efficient order processing and data flow.",
+            "Developed a full-featured admin dashboard with real-time analytics, secure review moderation, and order management.",
+            "Engineered using a structured MVC architecture, ensuring a secure, scalable, and production-ready environment."
+        ]
+    },
     {
         title: "Agentic Honeypot",
         badge: "Hackathon Runnerup",
@@ -70,16 +81,16 @@ const projectsData = [
 
 const skillsData = [
     {
+        category: "Backend & Database",
+        skills: ["PHP", "MySQL", "Python", "MongoDB"]
+    },
+    {
         category: "Frontend",
         skills: ["React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Responsive Design"]
     },
     {
-        category: "Backend & Database",
-        skills: ["PHP", "Python", "MySQL", "MongoDB"]
-    },
-    {
         category: "Tools",
-        skills: ["Git", "GitHub", "WordPress", "VS Code", "Postman"]
+        skills: ["Git", "GitHub", "WordPress", "VS Code", "Postman", "Composer"]
     }
 ];
 
