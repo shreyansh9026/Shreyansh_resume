@@ -1,81 +1,91 @@
 const experienceData = [
     {
-        title: "PHP Developer",
+        title: "Web Developer",
         period: "March 2025 - Feb 2026",
         company: "CMP Techsseract LLP, LUCKNOW",
         tasks: [
-            "Developing and maintaining robust backend components and RESTful APIs using PHP and MySQL.",
-            "Integrating frontend frameworks with PHP backends to deliver dynamic content and scalable solutions."
+            "Architected and maintained responsive, performance-optimized web interfaces using React.js and vanilla JavaScript.",
+            "Integrated scalable backend services and APIs leveraging Python, MongoDB, and MySQL, ensuring seamless cross-stack data flow."
         ]
     },
     {
-        title: "PHP Developer",
+        title: "Web Developer",
         period: "Oct 2024 – March 2025",
         company: "Miso",
         tasks: [
-            "Developed and optimized PHP backend logic, ensuring high performance and security for web applications.",
-            "Integrated PHP services with MySQL databases for seamless and efficient data management."
+            "Engineered dynamic, mobile-first web pages utilizing HTML5, CSS3, and React.js to improve user engagement.",
+            "Designed and implemented robust backend logic using PHP and MySQL for secure, efficient data management."
         ]
     },
     {
-        title: "PHP Developer Intern",
+        title: "Web Developer Intern",
         period: "Apr 2024 – Sept 2024",
         company: "Cognifyz Technology",
         tasks: [
-            "Assisted in backend development using PHP to implement business logic and connect to MySQL databases.",
-            "Collaborated with the development team to deploy and optimize dynamic, database-driven web platforms."
+            "Developed reusable UI components and interactive web elements using Bootstrap and JavaScript.",
+            "Streamlined WordPress website deployments and customized plugin functionality for client projects."
         ]
     },
     {
-        title: "PHP Developer Intern",
+        title: "Web Developer Intern",
         period: "Sept 2023 – March 2024",
         company: "Softpro India",
         tasks: [
-            "Built and tested functional modules utilizing PHP and SQL for internal management applications.",
-            "Completed intensive professional training with an emphasis on backend development using PHP and MySQL."
+            "Developed, tested, and optimized core feature modules for internal enterprise web applications.",
+            "Completed an intensive two-month training program focused on modern web development practices."
+        ]
+    },
+    {
+        title: "Web Development Intern",
+        period: "Jul 2023 – Aug 2023",
+        company: "Bharat Intern",
+        tasks: [
+            "Designed interactive and user-friendly frontend layouts utilizing HTML, CSS, and modern JavaScript.",
+            "Facilitated database connectivity and executed backend scripting to support core application functions."
         ]
     }
 ];
 
 const projectsData = [
     {
-        title: "Sasta Print",
-        badge: "Live Project",
-        techStack: "PHP • MySQL • MVC",
-        description: "Developed a secure and robust online printing platform enabling customers to seamlessly place, track, and review orders.",
+        title: "Multi-Agent AI System",
+        badge: "AI Application",
+        techStack: "Python • OpenAI API • LLMs",
+        description: "Developed a scalable multi-agent AI architecture blending LLM reasoning, structured memory, and modular tool execution.",
         highlights: [
-            "Built complex database models and optimized MySQL queries for efficient order processing and data flow.",
-            "Developed a full-featured admin dashboard with real-time analytics, secure review moderation, and order management.",
-            "Engineered using a structured MVC architecture, ensuring a secure, scalable, and production-ready environment."
+            "Built three specialized agents (Ask Agent, Ask MCP, Ask AlloyDB) capable of dynamic task handling and workflow integration.",
+            "Demonstrated database querying and autonomous command execution."
         ]
     },
     {
         title: "Agentic Honeypot",
-        badge: "Hackathon Runnerup",
+        badge: "Hackathon Runner-up",
         techStack: "Python • FastAPI • OpenAI API",
-        description: "Designed an AI-powered honeypot system to detect, lure, and analyze malicious attackers using autonomous agents.",
+        description: "Engineered an AI-powered honeypot system designed to autonomously detect, engage, and analyze malicious network attackers.",
         highlights: [
-            "Implemented risk scoring and signal extraction.",
-            "Maintained structured intelligence logging for evidence."
+            "Implemented real-time risk scoring and interaction logging.",
+            "Created threat intelligence extraction into JSON/CSV formats for security review."
         ]
     },
     {
-        title: "Grievance Redressal Portal",
-        badge: "Intership Project",
-        techStack: "PHP • MySQL • Full Stack",
-        description: "Developed a platform for complaint submission and tracking with an admin dashboard for efficient resolution management."
+        title: "ZenTask AI",
+        badge: "AI Bot Tool",
+        techStack: "Node.js/Python • AI Integration",
+        description: "Created an AI-powered Discord bot facilitating task assistance, server automation, and command-driven workflows.",
+        highlights: [
+            "Architected modular command logic that allows seamless integration of new workflows.",
+            "Enhances community utility without disrupting core operations."
+        ]
     },
     {
-        title: "E-Health Care System",
-        badge: "Major college project",
-        techStack: "PHP • MySQL",
-        description: "Built a patient management system for appointment scheduling, record keeping, and optimized history retrieval."
-    },
-    {
-        title: "Online Voting System",
-        badge: "Minor college project",
-        techStack: "PHP • Security",
-        description: "Created a secure voting interface ensuring data integrity with real-time result tallying and reporting features."
+        title: "Sasta Print",
+        badge: "Live Project",
+        techStack: "PHP • MySQL • MVC",
+        description: "Engineered a robust e-commerce platform for printing services using a structured MVC architecture for scalability and security.",
+        highlights: [
+            "Built complex database models and optimized MySQL queries for efficient order processing.",
+            "Developed an intuitive admin dashboard for real-time analytics and seamless product discovery."
+        ]
     }
 ];
 
@@ -89,8 +99,12 @@ const skillsData = [
         skills: ["React.js", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Responsive Design"]
     },
     {
+        category: "AI & Automation",
+        skills: ["OpenAI API", "Agent Workflows", "Prompt Design", "Structured Reasoning"]
+    },
+    {
         category: "Tools",
-        skills: ["Git", "GitHub", "WordPress", "VS Code", "Postman", "Composer"]
+        skills: ["Git", "GitHub", "WordPress", "VS Code", "Postman"]
     }
 ];
 
@@ -108,25 +122,30 @@ const educationData = [
     {
         degree: "Intermediate",
         period: "2021",
-        institution: "Gurukul Mission senior secondary school | Score: 65%"
+        institution: "Gurukul Mission Senior Secondary School | Score: 65%"
     }
 ];
 
 const achievementsData = [
     {
         icon: "fas fa-trophy",
+        title: "Participant:",
+        description: "India AI Impact Buildathon 2026 (40,000+ peers)"
+    },
+    {
+        icon: "fas fa-robot",
+        title: "Google Hack2Skill:",
+        description: "Built 3 AI agents for the competition."
+    },
+    {
+        icon: "fas fa-certificate",
+        title: "Certified:",
+        description: "Two-Month Web Development Training (Softpro India)"
+    },
+    {
+        icon: "fas fa-medal",
         title: "Gold Medalist:",
         description: "Shot Put (College Sports Fest)"
-    },
-    {
-        icon: "fas fa-certificate",
-        title: "Certified:",
-        description: "Web Development Training (Softpro India)"
-    },
-    {
-        icon: "fas fa-certificate",
-        title: "Certified:",
-        description: "Internship Completion (Cognifyz Technology)"
     }
 ];
 
