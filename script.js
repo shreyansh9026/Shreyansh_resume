@@ -25,24 +25,6 @@ const experienceData = [
             "Developed reusable UI components and interactive web elements using Bootstrap and JavaScript.",
             "Streamlined WordPress website deployments and customized plugin functionality for client projects."
         ]
-    },
-    {
-        title: "Web Developer Intern",
-        period: "Sept 2023 – March 2024",
-        company: "Softpro India",
-        tasks: [
-            "Developed, tested, and optimized core feature modules for internal enterprise web applications.",
-            "Completed an intensive two-month training program focused on modern web development practices."
-        ]
-    },
-    {
-        title: "Web Development Intern",
-        period: "Jul 2023 – Aug 2023",
-        company: "Bharat Intern",
-        tasks: [
-            "Designed interactive and user-friendly frontend layouts utilizing HTML, CSS, and modern JavaScript.",
-            "Facilitated database connectivity and executed backend scripting to support core application functions."
-        ]
     }
 ];
 
